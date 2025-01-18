@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="/server">
+        <h1 style="text-align: center;">Form</h1>
+        
+        <div>
+            <label for="username" >Username: </label>
+            <input type="text" placeholder="username" id="username" name="username">
+        <br><br>
+            <label for="password">Password: </label>
+            <input type="password" placeholder="password" id="password" name="password">
+        <br><br>
+            <label for="email" >Email Id:</label>
+            <input type="email" id="email" name="email" placeholder="email">
+        <br><br>
+            <label for="phone">Phone No:</label>
+            <input type="tel" id="phone" name="phone" placeholder="phone">
+        </div>
+        <fieldset>
+            <legend><h2>Education</h2></legend>
+            <input type="checkbox" id="education1" name="education1" value="Matriculation" checked>
+            <label for="education1">Matriculation</label>
+
+            <input type="checkbox" id="education2" name="education2" value="Intermdiate" >
+            <label for="education2">Intermdiate</label>
+
+            <input type="checkbox" id="education3" name="education3" value="Diploma" >
+            <label for="education3">Diploma</label>
+
+            <input type="checkbox" id="education4" name="education4" value="B.Tech" >
+            <label for="education4">B.Tech</label>
+
+        </fieldset>
+        <br>
+        <div>
+            <label for="education" >Education: </label>
+            <select name="education" id="education" multiple>
+                <option value="">-select-</option>
+                <option value="Matriculation">Matriculation</option>
+                <option value="Intermdiate">Intermdiate</option>
+                <option value="Diploma">Diploma</option>
+                <option value="B.Tech">B.Tech</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="Profession">Profession: </label>
+            <select name="Profession" id="Profession">
+                <option value="">-profession-</option>
+                <option value="Student" selected>Student</option>
+                <option value="Fresher">Fresher</option>
+                <option value="Experienced">Experienced</option>    
+            </select>
+            <br><br>
+            <label for="experience">Years of Experience: </label>
+            <input type="number" id="experience" name="experience" min="0" max="15" value="0"> <!-- step="2" -->
+        </div>
+        <br>
+        <div>
+            <label for="DOB" id="DOB">DOB: </label>
+            <input type="date" name="DOB">
+            <br><br>
+            <label for="Gender" id="Gender" name="Gender">Gender:</label>
+            <input type="radio" id="Male" name="Gender" value="Male" >
+            <label for="Male">Male</label>
+
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+
+            <input type="radio" id="Others" name="Gender" value="Others">
+            <label for="trans">Others</label>
+        </div>
+        <br>
+        <div>
+            <label for="feedback">Feedback: </label>
+            <textarea name="feedback" id="feedback" rows="3" columns="10" placeholder="Write your valuable feedback here..."></textarea>
+            <br>
+        </div>
+        <input type="reset" value="Reset" >
+        <button >Submit</button>
+        <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+    </form>
+    
+    <hr>
+
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" id="" placeholder="search in youtube">
+        <button>search</button>
+    </form>
+    <form action="https://www.google.com/search?">
+        <input type="text" name="q" id="" placeholder="search in google">
+        <button>search</button>    
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* *{
+    background-color: rgb(240, 211, 173);
+} */
+/*h1{
+    font-family: Legue spartan;//not working 
+    align-items: center;
+    background-color: #fff;
+    color: #ffa511;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: teal double underline;
+    text-transform: uppercase;
+
+}  */
+    body{
+        background-color: rgb(6, 130, 78);
+    }
+    div{
+        background-color: rgb(255, 255, 255);
+    }
+
+    form{
+       
+        background-color: rgb(255, 255, 62);
+    }
+    input{
+        background-color: inherit;
+    }
+
+    button{
+        background-color: inherit;
+    }

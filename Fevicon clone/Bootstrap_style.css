@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+.container1{
+    padding: 10px 10px;
+}
+.container2{
+    color: antiquewhite;
+    background-color: #0a0a0a;
+    padding: 25px 40px; 
+    /* margin: auto; */
+    display: block;
+}
+.container2 p{
+    width: 100%;
+    margin-top: 15px;
+    font-size: 24px; 
+    font-weight: bold;
+    display: block;
+}
+.main{
+    padding: 30px 35px;
+}
+.container3 h1{
+    padding: 30px 35px 0px 20px;
+}
+#heading{
+    margin-top: 10px;
+    padding:5px 15px 0;
+}
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.card{
+    max-width: 20rem; 
+    flex-grow: 1;
+    margin: 20px 20px;
+    box-shadow: 4px 4px 10px rgb(228, 237, 237);
+}
+/* .card-img-top{
+    max-height: 12rem;
+} */
+.card a{
+    text-decoration: none;
+    color: #000;
+}
+.footer a{
+    text-decoration: none;
+    color: #295efd;
+    
+}
+li{
+    list-style: none;
+    /* color: #529bfa; */
+}
+.resources{
+    padding: 10px 35px;
+    display: inline-block;
+}
+.container4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container4 .card{
+    max-width: 18rem;
+}
+.footer{
+    background-color: #ebe2e2e0;
+    padding: 20px;
+}
+.container i{
+    color: #000;
+}
+.container #love{
+    color: #fc1111;
+}
+/* .box3,.box4{
+    margin-left: 10px;
+} */
+/* .btn{
+    background: #ffffff;  
+} */
+
+.btn:hover{
+    box-shadow: 1px 2px 2px grey;
+}
+.nav-link:hover{
+    background: #ffffff;
+    box-shadow: 1px 2px 2px grey;
+    border-radius: 10px;
+}
