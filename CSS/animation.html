@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box{
+            width: 200px;
+            height: 50px;
+            border: 2px solid green;
+            box-sizing: border-box;
+            margin: 10px;
+            text-align: center;
+            padding: 5px;
+            color: black;
+            position: relative;
+            font-size: xx-large;
+            background-color: red;
+            border-radius: 10px;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            animation-delay: 2s;
+            animation-timing-function:normal;
+            animation-direction:alternate ;
+            animation-fill-mode: none;
+            /* animation-play-state: running; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+        }
+        @keyframes rightMovement {
+             from{
+                top: 0;
+                left: 0;
+                background-color: green;
+            }
+            to{
+                top: 500px;
+                left: 800px;
+                background-color: yellow;
+            }
+
+            /* 0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:1000px; top:0px;}
+            50%  {background-color:blue; left:1000px; top:500px;}
+            75%  {background-color:green; left:0px; top:500px;}
+            100% {background-color:red; left:0px; top:0px;}  */
+
+        }
+        #circle{
+            position: relative;
+            background-color: yellow;
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            border-radius: 500px;
+            border: 2px solid rgb(239, 8, 8);
+            margin: 100px ;
+            text-align: center;
+            padding: 20px ;
+            font-size: 50px;
+            text-transform: capitalize;
+            animation-name: circleMove;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            /* animation: circleMove 10s linear 1s 4 alternate none; */
+
+        }
+        /* @keyframes circleMove {
+            from{
+                top: 0;
+                left: 0;
+                background-color: yellow;
+            }
+            to{
+                top: 5px;
+                left: 80px;
+                background-color: red;
+            }
+        } */
+        @keyframes circleMove {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Hello</p>
+        </div>
+        <div id="circle">
+            <p>jio </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid red; */
+    box-sizing: border-box;
+}
+.card{
+    min-width: 380px;
+    border: 1px solid black;
+    border-radius: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.868);
+    font-family: 'Poppins', sans-serif;
+}
+.upper{
+    padding: 20px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    /* border: 1px solid white; */
+}
+.upper .left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card .logo{
+    height: 40px;
+    background: transparent;
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+.card .chip{
+    height: 60px;
+}
+.lower{
+    padding: 0px 10px 0px 20px;
+    margin-bottom: 30px;
+
+    /* border: 1px solid white;  */
+}
+.lower .card_details{
+    margin-bottom: 10px;
+}
+.card_details #p2{
+    font-size: 1.3rem;
+}
+.lower .validate{
+    min-height: 0px;
+    /* border: 1px solid white; */
+    display: flex;
+    margin-right: 15px;
+    justify-content: space-between;
+    align-items: end;
+}
+.validate .name{
+    font-size: 1.15rem;
+}
+.validate .valid{
+    font-size: 0.85rem;
+}
+.valid #v1{
+    font-size: 0.5rem;
+}
