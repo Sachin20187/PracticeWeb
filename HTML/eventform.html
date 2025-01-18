@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1>Event Registration</h1>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="xyz@gmail.com">
+        <br>
+        <label for="phone">Phone:</label>
+        <br>
+        <input type="tel" pattern="[6-9]{1}[0-9]{2}-[0-9]{4}-[0-9]{3}" name="phone" id="phone" placeholder="987-4562-124">
+        <br>
+        <label for="occupation">Occupation:</label>
+        <br>
+        <select name="occupation" id="occupation">
+            <option value="others">Others</option>
+            <option value="student">Student</option>
+            <option value="fresher">Fresher</option>
+            <option value="experienced">Experienced</option>
+        </select>
+        <br>
+        <br>
+    <fieldset>
+        <legend>Topic of Interest</legend>
+        <!-- <label for="interest">Topic of Interest:</label> -->
+        <!-- <br> -->
+        <input type="checkbox" name="html" id="interest">
+        <label for="interest">HTML</label>
+        <br>
+        <input type="checkbox" name="css" id="interest">
+        <label for="interest">CSS</label>
+        <br>
+        <input type="checkbox" name="javascript" id="interest">
+        <label for="interest">Javascript</label>
+    </fieldset>
+        <br>
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="40" rows="3" placeholder="Any suggestions"></textarea>
+        <input type="submit" value="Register" >
+        <br>
+
+
+    </form>
+</body>
+</html>
